@@ -1,0 +1,16 @@
+{
+  "name": "colorful-listmap",
+  "version": "0.1.0",
+  "authors": [
+    "Kevin Lewis <kevinlewis13@gmail.com>",
+    "Li Li <litopia.li@gmail.com"
+  ],
+  "ignore": [
+    ".gitignore",
+    "bower.json",
+    "**/*.md"
+  ],
+  "description": "A simple mixin that allows for changing the background color of a range of elements.",
+  "main": "_colorful-listmap.scss",
+  "license": "MIT"
+}

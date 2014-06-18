@@ -1,11 +1,11 @@
-#button-bower
+#colorful-listmap
 
 
 ```
-@mixin buttoncss($btn-color){
-  @each $color in $btn-color{
-    $key: nth($color, 1);
-    $value: nth($color, 2);
+@mixin colorful-listmap($listmap){
+  @each $item in $listmap{
+    $key: nth($item, 1);
+    $value: nth($item, 2);
 
     &-#{$key}{
       background: $value;
@@ -36,7 +36,7 @@ $btn-color: (
 
 .button{
   @extend %button;
-  @include buttoncss($btn-color);
+  @include colorful-listmap($btn-color);
 }
 ```
 ##Output CSS
@@ -64,7 +64,7 @@ $btn-color: (
 ```
 ## To Install
 ```
-$ bower install button-bower --save
+$ bower install colorful-listmap --save
 ```
 In your Grunt file(using Grunt-Sass):
 
@@ -76,7 +76,7 @@ sass: {
     },
     options: {
       includePaths: [
-        './bower_components/button-bower'
+        './bower_components/colorful-listmap'
       ]
     }
   }
@@ -85,6 +85,6 @@ sass: {
 In your Sass manifest:
 
 ```
-@import "button-bower";
+@import "colorful-listmap";
 ```
 

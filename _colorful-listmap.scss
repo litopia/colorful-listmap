@@ -10,11 +10,11 @@
 //   tertiary $tertiary-color
 // );
 
-// This mixin allows you to create a list of button css based on color pairs
-@mixin buttoncss($btn-color){
-  @each $color in $btn-color{
-    $key: nth($color, 1);
-    $value: nth($color, 2);
+// This mixin allows you to change the background color of a range of elements
+@mixin buttoncss($listmap){
+  @each $item in $listmap{
+    $key: nth($item, 1);
+    $value: nth($item, 2);
 
     &-#{$key}{
       background: $value;
